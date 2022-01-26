@@ -1,7 +1,6 @@
 def calculatePay():
     
     # This first line is provided for you
-    pay = 0.0
     try:
         hrs = float(input("Enter Hours: "))
         rate = float(input("Enter Rate: "))
@@ -15,7 +14,6 @@ def calculatePay():
             print ("Pay: " + str(pay))
     except:
         print("Error, please enter numeric input")
-        exit()
     # end assignment
 
 ## if you want to test locally before you try to sync
