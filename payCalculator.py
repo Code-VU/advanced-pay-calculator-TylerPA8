@@ -5,11 +5,11 @@ def calculatePay():
     try:
         hrs = float(input("Enter Hours: "))   
     except:
-        exit("Error, please enter numeric input")
+        exit("Error, please enter numeric input\n")
     try:
         rate = float(input("Enter Rate: "))   
     except:
-        exit("Error, please enter numeric input")
+        exit("Error, please enter numeric input\n")
     if hrs > 40.0:
         overtime = hrs-40
         overtime *= (rate*1.5)
@@ -24,4 +24,4 @@ def calculatePay():
 ## uncomment calculatePay() and run > python payCalculator.py
 ## ***IMPORTANT*** please recomment before you submit/sync your assignment.
 ## OR YOUR TEST WILL NOT RUN
-## calculatePay()
+calculatePay()
